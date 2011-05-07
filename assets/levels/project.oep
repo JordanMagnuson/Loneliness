@@ -1,0 +1,25 @@
+<project>
+	<name>Loneliness</name>
+	<settings>
+		<defaultWidth>400</defaultWidth>
+		<defaultHeight>8000</defaultHeight>
+		<workingDirectory>../gfx</workingDirectory>
+	</settings>
+	<objects>
+		<object name="player" image="player.png" width="6" height="6" limit="1"/>
+		<folder name="centers">
+			<object name="mixer_center" image="debug.png" width="6" height="6"/>
+			<object name="orbiter_center" image="debug.png" width="6" height="6"/>
+		</folder>
+		<folder name="others">
+			<object name="sitter" image="other.png" width="6" height="6"/>
+			<object name="mixer" image="other.png" width="6" height="6"/>
+			<object name="orbiter" image="other.png" width="6" height="6"/>
+			<object name="jumper" image="other.png" width="6" height="6"/>
+			<object name="marcher" image="other.png" width="6" height="6"/>
+		</folder>
+	</objects>
+	<layers>
+		<objects name="actors" gridSize="6"/>
+	</layers>
+</project>
