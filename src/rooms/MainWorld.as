@@ -58,7 +58,10 @@ package rooms
 			
 			width = 400;
 			height = 8000;	
+		}
 		
+		override public function begin():void
+		{
 			add(new Background01);
 			add(new Background02);
 			add(new Background03);
@@ -66,6 +69,8 @@ package rooms
 			add(player = new Player);
 			
 			music.loop();
+			
+			//player.y = FP.height - FP.screen.height * 5;
 		}
 		
 		/**
