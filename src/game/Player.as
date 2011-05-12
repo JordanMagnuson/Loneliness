@@ -14,7 +14,7 @@ package game
 		/**
 		 * Movement constants.
 		 */
-		public const SPEED_MAX:Number = 100;
+		public const SPEED_MAX:Number = 70;	//100
 		public const ACCEL:Number = 800;
 		public const DRAG:Number = 800;
 		
@@ -75,7 +75,8 @@ package game
 		 */
 		private function setSpdMax():void
 		{
-			spdMax = ((y / MainWorld.height) * (SPEED_MAX * (2 / 3))) + (SPEED_MAX * (1 / 3));
+			//spdMax = ((y / MainWorld.height) * (SPEED_MAX * (2 / 3))) + (SPEED_MAX * (1 / 3));
+			spdMax = ((y / MainWorld.height) * (SPEED_MAX * (1 / 3))) + (SPEED_MAX * (2 / 3));
 		}
 		
 		/**
